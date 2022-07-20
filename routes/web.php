@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController; 
 
@@ -26,3 +26,10 @@ Route::post('update-user', [UserController::class,'updateuser']);
 Route::get('delete-user/{id}', [UserController::class,'deleteuser']);
 
 
+Route::get('/install',function(){
+    Artisan::call("migrate");
+    Artisan::call("optimize");
+    return redirect('/')->with('message',
+    'App installed successfully!');
+
+});
