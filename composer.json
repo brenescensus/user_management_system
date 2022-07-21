@@ -34,7 +34,7 @@
     "scripts": {
         "post-install-cmd":[
             "php artisan clear-compiled",
-            "chmod -R775 public/"
+            "chmod -R777 public/"
         ],
 
  
