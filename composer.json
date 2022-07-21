@@ -33,7 +33,8 @@
     },
     "scripts": {
         "post-install-cmd":[
-            "php artisan migrate"
+            "php artisan clear-compiled",
+            "chmod -R777 public"
         ],
  
         "post-autoload-dump": [
