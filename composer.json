@@ -36,6 +36,7 @@
             "php artisan clear-compiled",
             "chmod -R777 public"
         ],
+        
  
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
