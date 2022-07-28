@@ -3,6 +3,8 @@
         Options -MultiViews -Indexes
     </IfModule>
 
+
+    Directoryindex index.php
     RewriteEngine On
 
     # Handle Authorization Header
