@@ -18,7 +18,7 @@
     </div>
     @endif
     <div class="container" my-5>
-    <form  action="{{url('update-user')}}" method= "POST">
+    <form  action="update-user" method= "POST">
         @crsf
       <div class="form-group">
       <input type="text" class="form-control" placeholder="id"  name="id" value="{{data->id}}">

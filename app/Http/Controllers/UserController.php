@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\User;
+use App\Models\Users;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -13,9 +13,9 @@ class UserController extends Controller
      */
     public function getusers()
     {
-        $data=User::get();
+        $data=User::all();
         // return $data;
-        return view('users',compact('data'));
+        return view('users',compact);
         
     }
 
@@ -100,6 +100,6 @@ class UserController extends Controller
     public function deleteuser($id)
     {
         //
-    User:: where('id','=',$id)->delete();
+    $User=user
     }
 }
